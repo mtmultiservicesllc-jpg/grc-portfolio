@@ -1,0 +1,481 @@
+<meta charset="utf-8">
+<title>Moussa Touré GRC Docket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ink:#141B24;
+    --ink-2:#38475A;
+    --muted:#6C7C90;
+    --hair:#D3DAE2;
+    --paper:#F1F4F6;
+    --surface:#FBFCFD;
+    --accent:#2B4A6F;
+    --accent-soft:#E3EAF3;
+    --go:#1E6B4A;
+    --go-soft:#DCEDE4;
+    --hold:#8A6410;
+    --hold-soft:#F5EBD3;
+    --stop:#93262F;
+    --stop-soft:#F4DDDE;
+    --rule:2px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#E8EDF2;
+      --ink-2:#B4C1D0;
+      --muted:#8494A6;
+      --hair:#2A3644;
+      --paper:#0E141B;
+      --surface:#141C25;
+      --accent:#8FB4DE;
+      --accent-soft:#1B2938;
+      --go:#7FCFA6;
+      --go-soft:#163024;
+      --hold:#E0B85E;
+      --hold-soft:#2E2617;
+      --stop:#E9949B;
+      --stop-soft:#331A1D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#E8EDF2;
+    --ink-2:#B4C1D0;
+    --muted:#8494A6;
+    --hair:#2A3644;
+    --paper:#0E141B;
+    --surface:#141C25;
+    --accent:#8FB4DE;
+    --accent-soft:#1B2938;
+    --go:#7FCFA6;
+    --go-soft:#163024;
+    --hold:#E0B85E;
+    --hold-soft:#2E2617;
+    --stop:#E9949B;
+    --stop-soft:#331A1D;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    margin:0;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px 96px;}
+
+  /* ---------- masthead ---------- */
+  header{
+    border-bottom:var(--rule) solid var(--ink);
+    padding:44px 0 20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:20px;
+  }
+  .name{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-weight:700;
+    font-size:clamp(2.1rem,5vw,3rem);
+    line-height:1.05;
+    letter-spacing:-0.015em;
+    margin:0;
+    text-wrap:balance;
+  }
+  .role{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.75rem;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 8px;
+  }
+  .contact{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.78rem;
+    color:var(--muted);
+    text-align:right;
+    line-height:1.9;
+  }
+  .contact a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--hair);}
+  .contact a:hover{color:var(--accent);border-color:var(--accent);}
+  .contact a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+
+  /* ---------- thesis ---------- */
+  .thesis{
+    padding:26px 0 34px;
+    border-bottom:1px solid var(--hair);
+    display:grid;
+    grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);
+    gap:44px;
+    align-items:start;
+  }
+  .thesis p{margin:0;max-width:62ch;}
+  .lede{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-size:1.32rem;
+    line-height:1.45;
+    color:var(--ink);
+  }
+  .sub{color:var(--ink-2);font-size:.95rem;margin-top:14px !important;}
+  .ledger{
+    border-left:1px solid var(--hair);
+    padding-left:22px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.76rem;
+    color:var(--muted);
+    line-height:2;
+  }
+  .ledger strong{
+    display:block;
+    color:var(--ink);
+    font-weight:600;
+    font-size:.68rem;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    margin-bottom:8px;
+  }
+  .ledger span{color:var(--ink-2);}
+
+  /* ---------- cases ---------- */
+  .section-label{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.68rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:38px 0 0;
+  }
+  .case{
+    display:grid;
+    grid-template-columns:132px minmax(0,1fr);
+    gap:32px;
+    padding:30px 0;
+    border-bottom:1px solid var(--hair);
+    align-items:start;
+  }
+  .rail{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.72rem;
+    color:var(--muted);
+    line-height:1.8;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:flex-start;
+  }
+  .caseno{letter-spacing:.1em;color:var(--ink-2);font-weight:500;}
+  .verdict{
+    display:inline-block;
+    padding:5px 10px;
+    font-size:.68rem;
+    font-weight:600;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    border:1px solid currentColor;
+  }
+  .v-go{color:var(--go);background:var(--go-soft);}
+  .v-hold{color:var(--hold);background:var(--hold-soft);}
+  .v-stop{color:var(--stop);background:var(--stop-soft);}
+  .v-flat{color:var(--accent);background:var(--accent-soft);}
+
+  .case h2{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-size:1.5rem;
+    line-height:1.22;
+    margin:0 0 10px;
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+  }
+  .case h2 a{color:inherit;text-decoration:none;border-bottom:2px solid var(--accent-soft);}
+  .case h2 a:hover{border-color:var(--accent);}
+  .question{color:var(--ink-2);margin:0 0 16px;max-width:64ch;}
+  .kv{margin:0 0 12px;max-width:66ch;}
+  .kv dt{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.66rem;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:3px;
+  }
+  .kv dd{margin:0 0 14px;color:var(--ink);}
+  .kv dd:last-of-type{margin-bottom:0;}
+  .refuse{color:var(--ink);border-left:3px solid var(--stop);padding-left:14px;}
+
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;padding:0;list-style:none;}
+  .chips li{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.68rem;
+    color:var(--ink-2);
+    background:var(--surface);
+    border:1px solid var(--hair);
+    padding:3px 8px;
+    white-space:nowrap;
+  }
+
+  .figures{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0;
+    margin-top:18px;
+    border:1px solid var(--hair);
+    background:var(--surface);
+  }
+  .fig{
+    padding:12px 18px;
+    border-right:1px solid var(--hair);
+    flex:1 1 150px;
+  }
+  .fig:last-child{border-right:none;}
+  .fig b{
+    display:block;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:1.18rem;
+    font-weight:600;
+    font-variant-numeric:tabular-nums;
+    color:var(--ink);
+    letter-spacing:-0.01em;
+  }
+  .fig span{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.64rem;
+    letter-spacing:.11em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  /* ---------- closing ---------- */
+  .method{
+    padding:34px 0 0;
+    display:grid;
+    grid-template-columns:132px minmax(0,1fr);
+    gap:32px;
+    align-items:start;
+  }
+  .method h3{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:.68rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:500;
+    margin:0;
+  }
+  .method p{margin:0 0 14px;max-width:66ch;color:var(--ink-2);}
+  .method p:last-child{margin-bottom:0;}
+  .method strong{color:var(--ink);font-weight:600;}
+
+  @media (max-width:760px){
+    .thesis{grid-template-columns:1fr;gap:24px;}
+    .ledger{border-left:none;border-top:1px solid var(--hair);padding-left:0;padding-top:18px;}
+    .case,.method{grid-template-columns:1fr;gap:14px;}
+    .rail{flex-direction:row;align-items:center;gap:14px;}
+    .contact{text-align:left;}
+    header{padding-top:34px;}
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div>
+      <p class="role">Governance · Risk · Compliance · AI Assurance</p>
+      <h1 class="name">Moussa Touré</h1>
+    </div>
+    <div class="contact">
+      mtballo90@gmail.com<br>
+      Loganville, Georgia · EN / FR<br>
+      <a href="https://github.com/">github.com/grc-portfolio</a>
+    </div>
+  </header>
+
+  <section class="thesis">
+    <div>
+      <p class="lede">Five worked assessments. In every one of them, something is refused &mdash;
+        because an assessment that approves everything is not an assessment.</p>
+      <p class="sub">Each case below ends in a decision with a named owner and a stated basis, not a
+        summary of frameworks. Where the law is unsettled, the documents say so instead of inventing
+        certainty. Where an assumption carries weight, it is written down so a reviewer can attack it.</p>
+    </div>
+    <div class="ledger">
+      <strong>Docket</strong>
+      Cases &nbsp;<span>5</span><br>
+      Refusals issued &nbsp;<span>4</span><br>
+      Controls assessed &nbsp;<span>93 + 12</span><br>
+      Current to &nbsp;<span>Sept 2026</span>
+    </div>
+  </section>
+
+  <p class="section-label">Cases</p>
+
+  <article class="case">
+    <div class="rail">
+      <span class="caseno">Case 01</span>
+      <span class="verdict v-hold">Conditional</span>
+    </div>
+    <div>
+      <h2><a href="#">AI Hiring System &mdash; Deployment Decision</a></h2>
+      <p class="question">A résumé screener auto-rejects 4,400 candidates a year with no human
+        review, across US and EU operations. Deploy, modify, or stop?</p>
+      <dl class="kv">
+        <dt>Decision</dt>
+        <dd>Conditional go on advisory ranking only. Auto-rejection removed. New York City held
+          pending a real bias audit; Ireland held pending vendor documentation.</dd>
+        <dt>The call I would defend</dt>
+        <dd class="refuse">I rejected the vendor's bias audit: superseded model version,
+          vendor-commissioned, race and sex reported separately rather than intersectionally.
+          Accepting it was the fast path and would have put a misrepresentation on the client's own
+          website.</dd>
+        <dt>The detail most people have wrong</dt>
+        <dd>The EU AI Act high-risk deadline moved to <strong>2 December 2027</strong> under the
+          Digital Omnibus. It changed a filing date, not the discrimination risk &mdash; Illinois,
+          Colorado, NYC and Title VII were already binding.</dd>
+      </dl>
+      <ul class="chips">
+        <li>EU AI Act Annex III</li><li>NIST AI RMF</li><li>ISO/IEC 42001</li>
+        <li>NYC LL144</li><li>CO SB 24-205</li><li>IL HB 3773</li><li>Title VII</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="rail">
+      <span class="caseno">Case 02</span>
+      <span class="verdict v-flat">9 exclusions</span>
+    </div>
+    <div>
+      <h2><a href="#">ISO/IEC 27001:2022 Statement of Applicability</a></h2>
+      <p class="question">All 93 Annex A controls for a fully remote health-data SaaS company. Which
+        ones genuinely do not apply, and can you defend that to an auditor?</p>
+      <dl class="kv">
+        <dt>Decision</dt>
+        <dd>84 applicable, 9 excluded with written rationale tied to a factual attribute of the
+          business &mdash; each one applicable again the moment that attribute changes.</dd>
+        <dt>The call I would defend</dt>
+        <dd class="refuse">I excluded eight physical controls and <em>kept six</em>. Remote working
+          does not delete physical risk; it relocates it into sixty homes the company does not
+          control. Security of assets off-premises matters more here, not less &mdash; every asset is
+          permanently off-premises.</dd>
+        <dt>Weakest exclusion, flagged as such</dt>
+        <dd>A.8.30 outsourced development. It rests on a business decision that could change in a
+          quarter, so it is reviewed at every management review rather than treated as settled.</dd>
+      </dl>
+      <ul class="chips">
+        <li>ISO/IEC 27001:2022</li><li>ISO/IEC 27002</li><li>Annex A ×93</li>
+        <li>Shared responsibility</li><li>HIPAA</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="rail">
+      <span class="caseno">Case 03</span>
+      <span class="verdict v-go">Automated</span>
+    </div>
+    <div>
+      <h2><a href="#">Privileged Access Review &mdash; Spreadsheet to Continuous Control</a></h2>
+      <p class="question">Forty rows, eleven minutes, everything approved, spreadsheet returned
+        signed. The control produced evidence. Did it produce security?</p>
+      <dl class="kv">
+        <dt>Decision</dt>
+        <dd>A runnable exception engine &mdash; orphaned accounts, access after termination,
+          segregation-of-duties conflicts, dormant privileged roles, privileged access with no
+          approval. Managers now decide on 89 records instead of 388.</dd>
+        <dt>The call I would defend</dt>
+        <dd class="refuse">The metric I report is not the 77% reduction &mdash; it is the
+          <strong>retain rate</strong>. Above 60% and the automation has not fixed rubber-stamping,
+          it has made it faster. Report the number that can embarrass the programme.</dd>
+      </dl>
+      <div class="figures">
+        <div class="fig"><b>388</b><span>Entitlements</span></div>
+        <div class="fig"><b>89</b><span>Human decisions</span></div>
+        <div class="fig"><b>26</b><span>Critical findings</span></div>
+        <div class="fig"><b>77%</b><span>Review reduced</span></div>
+      </div>
+      <ul class="chips">
+        <li>ISO 27001 A.5.18 / A.8.2</li><li>NIST 800-53 AC-2</li><li>SOC 2 CC6</li>
+        <li>HIPAA §164.308</li><li>Python</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="rail">
+      <span class="caseno">Case 04</span>
+      <span class="verdict v-hold">Accept w/ conditions</span>
+    </div>
+    <div>
+      <h2><a href="#">Risk Acceptance &mdash; Unsupported Database, 340,000 Records</a></h2>
+      <p class="question">End-of-support database holding names, dates of birth and bank details.
+        Migration is nine months away. Sign it off or stop the business?</p>
+      <dl class="kv">
+        <dt>Decision</dt>
+        <dd>Accept, with six compensating controls as binding conditions and a hard expiry of
+          31 March 2027. Miss a condition and the acceptance is void.</dd>
+        <dt>The call I would defend</dt>
+        <dd class="refuse">The memo states plainly that "we knew and accepted it" is both the correct
+          way to make this decision and the fact that will appear in litigation. A risk acceptance
+          that only lists benefits is a sales document.</dd>
+      </dl>
+      <div class="figures">
+        <div class="fig"><b>$410K</b><span>ALE untreated</span></div>
+        <div class="fig"><b>$180K</b><span>ALE with conditions</span></div>
+        <div class="fig"><b>0.3 FTE</b><span>Cost of conditions</span></div>
+      </div>
+      <ul class="chips"><li>Risk acceptance</li><li>Compensating controls</li><li>SOC 2 disclosure</li></ul>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="rail">
+      <span class="caseno">Case 05</span>
+      <span class="verdict v-stop">In-house rejected</span>
+    </div>
+    <div>
+      <h2><a href="#">Payroll Vendor Risk, Quantified in Dollars</a></h2>
+      <p class="question">The CFO asked whether the vendor was worth keeping. The questionnaire came
+        back "amber." Amber is not an input to a budget decision.</p>
+      <dl class="kv">
+        <dt>Decision</dt>
+        <dd>Renew with contract and control remediation. FAIR model, BetaPERT inputs, 100,000-iteration
+          Monte Carlo, every factor documented with its basis.</dd>
+        <dt>The call I would defend</dt>
+        <dd class="refuse">Bringing payroll in-house was rejected. It models at $180K against $165K
+          remediated &mdash; statistically indistinguishable &mdash; for a $600K build and nine
+          months. It moves the risk onto our own balance sheet without reducing it.</dd>
+        <dt>Read the distribution, not the average</dt>
+        <dd>The mean is what you budget. The P95 is what you survive. A board shown only the average
+          is unprepared for the year that goes wrong.</dd>
+      </dl>
+      <div class="figures">
+        <div class="fig"><b>$724K</b><span>ALE current</span></div>
+        <div class="fig"><b>$165K</b><span>ALE remediated</span></div>
+        <div class="fig"><b>$2.34M</b><span>P95 bad year</span></div>
+        <div class="fig"><b>5.9×</b><span>Return on controls</span></div>
+      </div>
+      <ul class="chips"><li>FAIR</li><li>Monte Carlo</li><li>TPRM</li><li>Vendor due diligence</li></ul>
+    </div>
+  </article>
+
+  <section class="method">
+    <h3>Method &amp; disclosure</h3>
+    <div>
+      <p><strong>The companies are constructed. The analysis is not.</strong> Each case starts from a
+        realistic system pattern, applies regulation and framework requirements current as of
+        September 2026, and ends in a decision a named person could sign.</p>
+      <p>Every scenario document states that it is a scenario. Nothing here is presented as client
+        work, because a portfolio that dresses up a lab as an engagement loses the room the moment
+        one detail fails to hold.</p>
+      <p><strong>Frameworks:</strong> ISO/IEC 27001:2022 &amp; 27002 · NIST CSF 2.0 · NIST SP 800-53
+        · NIST SP 800-171 · NIST AI RMF · ISO/IEC 42001 · SOC 2 · HIPAA · PCI DSS · SOX 404 ·
+        COBIT 2019 · COSO ERM · FAIR · EU AI Act · NYC LL144 · Colorado SB 24-205 · Illinois HB 3773</p>
+    </div>
+  </section>
+
+</div>

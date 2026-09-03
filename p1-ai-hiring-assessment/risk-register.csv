@@ -1,0 +1,17 @@
+Risk ID,NIST AI RMF Function,Risk Description,Likelihood (1-5),Impact (1-5),Inherent Score,Regulatory Driver,Treatment,Control ID,Owner,Residual Score,Status
+G-01,GOVERN,No named accountable owner for AI hiring outcomes,5,4,20,"EU AI Act Art. 26(1); CO SB 24-205",Assign Talent Manager as accountable owner; record in AI use-case inventory,C-07,Executive Sponsor,6,Open
+G-02,GOVERN,AI system procured through ATS renewal with no risk review; no use-case inventory,5,3,15,"ISO/IEC 42001 6.1; NIST GOVERN 1.1",Establish AI use-case inventory reviewed quarterly,C-07,GRC,5,Open
+G-03,GOVERN,Vendor contract lacks audit rights model-change notification and discrimination indemnity,4,5,20,EU AI Act Art. 25; TPRM,Amend contract at renewal; add 30-day model-change notice and exit-on-audit-failure,C-06,Legal / Procurement,8,Open
+G-04,GOVERN,Recruiters untrained on score derivation and override authority,5,3,15,EU AI Act Art. 26(2),Deliver training plus mandatory override reason field,C-08,GRC,5,Open
+M-01,MAP,Proxy discrimination via employment gaps graduation year and ZIP code,5,5,25,"Title VII; ADEA; IL HB 3773 (ZIP prohibited)",Remove or neutralise proxy features; monitor residual effect,C-02,Vendor / GRC,10,Open
+M-02,MAP,Model fine-tuned on vendor cross-client historical hiring outcomes encoding prior bias,4,5,20,Title VII disparate impact,Require training-data documentation; validate via independent audit,C-05,GRC,10,Open
+M-03,MAP,Non-linear histories and disability-related gaps read as instability,4,4,16,ADA,Remove gap-length feature; recruiter training on limitations,"C-02, C-08",GRC,8,Open
+M-04,MAP,No job-relatedness analysis linking scored features to role performance,5,4,20,Title VII business necessity,Document job-relatedness per feature; remove features that fail,C-11,GRC / Operations,8,Open
+MS-01,MEASURE,No adverse-impact monitoring; selection rates by protected group never calculated,5,5,25,"Title VII four-fifths rule; NYC LL144",Monthly impact-ratio monitoring by role family with 0.80 trigger,C-03,GRC,5,Open
+MS-02,MEASURE,Vendor bias audit inadequate - superseded model version non-intersectional vendor-commissioned,5,4,20,NYC LL144 independent audit,Commission independent audit covering production model version,C-05,GRC / Legal,8,Open
+MS-03,MEASURE,No model-drift detection; scoring behaviour can shift without alert,4,3,12,EU AI Act Art. 26(5),Add drift monitoring; contractual model-change notification,"C-03, C-06",IT / GRC,6,Open
+MS-04,MEASURE,Rejection decisions not logged with score and feature contributions,5,4,20,"EU AI Act Art. 26(6); CO records",Log score top features recruiter action and outcome; retain 3 years,C-04,IT / GRC,5,Open
+MG-01,MANAGE,Auto-rejection below score 40 removes human review for ~4400 candidates per year,5,5,25,"CO SB 24-205; IL HB 3773; Title VII",Disable auto-reject threshold; ranking advisory only,C-01,Talent Manager,6,Open
+MG-02,MANAGE,No candidate appeal or human-review request channel,4,4,16,"CO human review right; NYC LL144 notice",Publish candidate notice and human-review request route,C-09,Talent / Legal,6,Open
+MG-03,MANAGE,No kill switch - no defined trigger or authority to disable scoring,3,5,15,ISO/IEC 42001 8.3,Define triggers and single named authority to disable,C-10,Talent Manager,5,Open
+MG-04,MANAGE,No incident process for AI-caused discriminatory outcome,4,4,16,"EU AI Act Art. 26; ISO/IEC 42001 10.2",Extend incident response plan to cover AI outcome incidents,C-10,GRC,6,Open
