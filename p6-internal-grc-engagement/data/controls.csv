@@ -1,0 +1,32 @@
+control_ref,control_name,control_objective,framework,theme,test_frequency,owner
+A.5.1,Policies for information security,Documented policy set approved and reviewed annually,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.2,Information security roles and responsibilities,Roles and responsibilities defined and allocated,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.9,Inventory of information and other associated assets,"Complete inventory of applications, services and data",ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.17,Authentication information,Strong authentication secrets managed and protected,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.18,Access rights,"Access granted, reviewed and removed on a defined cycle",ISO/IEC 27001:2022,Organizational,Quarterly,Security Lead
+A.5.19,Information security in supplier relationships,Security requirements defined for every provider,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.20,Addressing information security within supplier agreements,Security requirements written into supplier agreements,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.22,"Monitoring, review and change management of supplier services",Annual review of provider assurance reports,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.23,Information security for use of cloud services,"Cloud provider controls verified, not assumed",ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.24,Information security incident management planning and preparation,Documented incident response plan,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.26,Response to information security incidents,Incidents responded to per documented procedure,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.29,Information security during disruption,Continuity and recovery arrangements documented,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.31,"Legal, statutory, regulatory and contractual requirements",Applicable obligations identified and tracked,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.34,Privacy and protection of PII,"Privacy notice, lawful basis and deletion route in place",ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.35,Independent review of information security,External review of the first-party assessment,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.5.37,Documented operating procedures,Operating procedures documented and available,ISO/IEC 27001:2022,Organizational,Annual,Security Lead
+A.6.5,Responsibilities after termination or change of employment,Access and obligations handled at offboarding,ISO/IEC 27001:2022,People,Quarterly,Security Lead
+A.7.9,Security of assets off-premises,Assets outside company premises protected,ISO/IEC 27001:2022,Physical,Annual,Security Lead
+A.8.1,User endpoint devices,"Endpoint encryption, updates and screen lock enforced",ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.2,Privileged access rights,Administrative access restricted and reviewed,ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.5,Secure authentication,MFA enforced on all administrative and provider accounts,ISO/IEC 27001:2022,Technological,Quarterly,Security Lead
+A.8.6,Capacity management,Spend caps and usage alerts on metered services,ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.8,Management of technical vulnerabilities,Dependency alerts monitored with remediation SLAs,ISO/IEC 27001:2022,Technological,Monthly,Security Lead
+A.8.9,Configuration management,"Configurations defined, documented and monitored",ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.13,Information backup,Backups taken and restore-tested on a schedule,ISO/IEC 27001:2022,Technological,Quarterly,Security Lead
+A.8.15,Logging,Application and administrative activity logged and retained,ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.16,Monitoring activities,Networks and systems monitored for anomalies,ISO/IEC 27001:2022,Technological,Monthly,Security Lead
+A.8.24,Use of cryptography,Encryption in transit and at rest; secrets never in source,ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.28,Secure coding,Secret scanning and push protection enabled,ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.31,"Separation of development, test and production",Preview and production environments separated,ISO/IEC 27001:2022,Technological,Annual,Security Lead
+A.8.32,Change management,"Changes reviewed before promotion, with rollback defined",ISO/IEC 27001:2022,Technological,Annual,Security Lead
