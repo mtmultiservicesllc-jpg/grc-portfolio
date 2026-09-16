@@ -9,7 +9,7 @@ mtballo90@gmail.com · Loganville, GA
 
 ---
 
-## The five assessments
+## The six assessments
 
 ### [1 — AI Hiring System: Governance Assessment and Deployment Decision](p1-ai-hiring-assessment/)
 An AI résumé screener that auto-rejects 4,400 candidates a year without human review, deployed
@@ -49,12 +49,28 @@ Bringing it in-house costs $600K and reduces nothing.
 
 ---
 
+### [6 — Internal GRC Engagement and IT Audit Report](p6-internal-grc-engagement/)
+A first-party ISO/IEC 27001 engagement run end to end on a live cloud estate and published in
+genericized form: scope and dependency map, 22-risk register, 93-control Statement of Applicability
+with **11 documented exclusions**, evidence procedure, walkthrough interview guide, control test
+log — and the audit report itself.
+
+**Overall opinion: Unsatisfactory.** Seven findings rated Critical to Medium, each with condition,
+criteria, cause, effect, recommendation and management response, plus a four-week remediation plan.
+**The hard call:** scoping the opinion to control *design* and refusing to offer an
+operating-effectiveness conclusion, because no control had yet been tested. "Controls tested: 0" is
+the most important number in the report.
+*ISO/IEC 27001:2022 · EU AI Act · NIST AI RMF · PCI DSS SAQ-A*
+
+---
+
 ## How these were built
 
 Each assessment starts from a realistic scenario, applies current regulation and framework
-requirements, and ends in a decision with a named owner and a stated basis. The companies are
-constructed; the legal analysis, control design and reasoning are real practice, current as of
-September 2026.
+requirements, and ends in a decision with a named owner and a stated basis. Assessments 1-5 are built on constructed companies; the legal analysis, control design and
+reasoning are real practice. **Assessment 6 is a real first-party engagement, genericized** — the
+company and product names are replaced, the scope, findings, control decisions and reasoning are as
+executed. Current as of September 2026.
 
 Where the law is unsettled, the documents say so rather than inventing certainty. Where an
 assumption is doing heavy lifting, it is written down so a reviewer can challenge it.
